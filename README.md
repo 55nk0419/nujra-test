@@ -115,11 +115,15 @@ Settings > Pages > Deploy from a branch > main > /root
 
 ## v14 update
 
-- Fixed duplicated letters in the Home hero title.
-- The left blue letters are `N U J R A`; the right black text starts from the second letter:
-  - N + orthwestern
-  - U + niversity
-  - J + apanese
-  - R + esearcher
-  - A + ssociation
+- Fixed hero title styling so only the first letter of each word is blue.
+- Ensured the remainder of each word is black.
+- Corrected title alignment so N/U/J/R/A no longer look duplicated or staggered.
 - Updated cache-busting query strings to `?v=14`.
+
+
+## v15 update
+
+- Fixed Home hero acronym alignment.
+- The blue first-letter column now has a fixed width and centered letters.
+- The black second-letter text now starts at a consistent x-position with a small gap.
+- Updated cache-busting query strings to `?v=15`.
