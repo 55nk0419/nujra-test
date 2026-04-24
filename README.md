@@ -30,3 +30,10 @@ NUJRAホームページの試作版です。
 ## GitHub Pages
 
 Settings > Pages > Deploy from a branch > main > /root
+
+
+## v4 update
+
+- Removed search box and category filter from the resources page.
+- Resource items are now simple direct-click cards.
+- Cards with no URL show `準備中`.

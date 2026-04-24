@@ -37,13 +37,25 @@ function setupMobileMenu() {
 }
 
 function makeResourceCard(item) {
+  const inner = `
+    <span class="badge">${escapeHtml(item.category)}</span>
+    <h3>${escapeHtml(item.title)}</h3>
+    <p>${escapeHtml(item.description)}</p>
+    <div class="meta">最終更新: ${escapeHtml(item.updated)}</div>
+    <span class="card-action">${item.url ? "詳細を見る" : "準備中"}</span>
+  `;
+
+  if (item.url) {
+    return `
+      <a class="resource-card resource-card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">
+        ${inner}
+      </a>
+    `;
+  }
+
   return `
-    <article class="resource-card">
-      <span class="badge">${escapeHtml(item.category)}</span>
-      <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.description)}</p>
-      <div class="meta">最終更新: ${escapeHtml(item.updated)}</div>
-      ${item.url ? `<a class="text-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">詳細を見る</a>` : ""}
+    <article class="resource-card resource-card-disabled">
+      ${inner}
     </article>
   `;
 }
@@ -104,25 +116,8 @@ async function initResourcesPage() {
   const list = document.getElementById("resourceList");
   if (!list) return;
 
-  const search = document.getElementById("resourceSearch");
-  const filterRow = document.getElementById("resourceFilterRow");
   const resources = await loadJson(DATA_PATHS.resources);
-  const categories = ["すべて", ...Array.from(new Set(resources.map(item => item.category).filter(Boolean)))];
-
-  let activeCategory = "すべて";
-
-  function render() {
-    const filtered = filterItems(resources, search?.value || "", activeCategory);
-    list.innerHTML = filtered.map(makeResourceCard).join("") || emptyState("該当する情報がありません。");
-  }
-
-  renderFilterButtons(filterRow, categories, category => {
-    activeCategory = category;
-    render();
-  });
-
-  search?.addEventListener("input", render);
-  render();
+  list.innerHTML = resources.map(makeResourceCard).join("") || emptyState("情報はまだ登録されていません。");
 }
 
 async function initMembersIfPresent() {
