@@ -111,3 +111,15 @@ Settings > Pages > Deploy from a branch > main > /root
 - Made card grids responsive with `auto-fit` and safe minimum widths.
 - Added overflow protection to reduce horizontal scrolling on narrow screens and non-standard monitors.
 - Updated cache-busting query strings to `?v=13`.
+
+
+## v14 update
+
+- Fixed duplicated letters in the Home hero title.
+- The left blue letters are `N U J R A`; the right black text starts from the second letter:
+  - N + orthwestern
+  - U + niversity
+  - J + apanese
+  - R + esearcher
+  - A + ssociation
+- Updated cache-busting query strings to `?v=14`.
