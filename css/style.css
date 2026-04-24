@@ -206,8 +206,17 @@ h1 {
   max-width: 920px;
 }
 
-.hero-title span {
+.hero-title .title-line {
   display: block;
+}
+
+.hero-title .title-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hero-title .title-word + .title-word {
+  margin-left: 0.16em;
 }
 
 h2 {
@@ -704,12 +713,32 @@ h3,
 }
 
 
-.acronym-letter {
-  display: inline-block;
-  color: #2563eb;
-  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 55%, #38bdf8 100%);
+
+.hero-title .acronym-letter {
+  display: inline-block !important;
+  color: #2563eb !important;
+  background: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 52%, #22c55e 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
-  text-shadow: 0 10px 26px rgba(37, 99, 235, 0.20);
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+  filter: drop-shadow(0 3px 6px rgba(37, 99, 235, 0.18));
+}
+
+
+/* Mobile hero title adjustment */
+@media (max-width: 560px) {
+  .hero-title {
+    font-size: clamp(2.05rem, 10.8vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-title .title-line {
+    margin-bottom: 0.05em;
+  }
+
+  .hero-title .title-word {
+    margin-right: 0.04em;
+  }
 }

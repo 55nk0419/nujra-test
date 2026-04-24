@@ -50,3 +50,19 @@ Settings > Pages > Deploy from a branch > main > /root
 
 - Home hero title now highlights the NUJRA acronym letters: N, U, J, R, A.
 - Updated CSS/JS cache-busting query strings to `?v=6`.
+
+
+## v7 update
+
+- Fixed NUJRA acronym highlighting in the Home hero title.
+- Changed `.hero-title span` to `.hero-title .title-line` to avoid affecting nested acronym letters.
+- Strengthened acronym-letter styling with `!important` and `-webkit-text-fill-color`.
+- Updated cache-busting query strings to `?v=7`.
+
+
+## v8 update
+
+- Fixed mobile title wrapping.
+- Wrapped full words (`Northwestern`, `University`, etc.) in `.title-word` so the acronym letters do not break away from the words.
+- Added mobile-specific hero title sizing.
+- Updated cache-busting query strings to `?v=8`.
