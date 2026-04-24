@@ -1083,3 +1083,197 @@ main {
 .hero-title-grid .title-word {
   text-align: left;
 }
+
+
+/* v17: Global mobile overflow and width control */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 0;
+}
+
+main,
+.site-header,
+.site-footer,
+.nav-wrap,
+.hero,
+.page-hero,
+.section,
+.section-soft,
+.cta-section,
+.footer-inner {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.hero,
+.page-hero,
+.section,
+.section-soft {
+  width: min(100%, var(--max));
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.feature-grid,
+.resource-teaser-grid,
+.resource-grid,
+.member-grid {
+  min-width: 0;
+}
+
+.feature-card,
+.resource-card,
+.data-card,
+.member-card,
+.info-box,
+.form-card,
+.notice,
+.hero-card,
+.cta-section {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Keep Japanese mostly natural, but allow emergency breaks for long English affiliations and URLs. */
+.member-affiliation,
+.member-name span,
+.resource-card,
+.data-card,
+.feature-card,
+.notice,
+.footer-note,
+.lead {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-break: auto;
+}
+
+/* The global keep-all rule is too strict on small screens and can cause overflow. */
+@media (max-width: 760px) {
+  body,
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  .lead,
+  .notice,
+  .feature-card,
+  .resource-card,
+  .data-card,
+  .info-box,
+  .form-card,
+  .member-card {
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: auto;
+  }
+
+  .nav-wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero,
+  .page-hero,
+  .section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-soft {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 22px;
+  }
+
+  .cta-section {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .hero-home {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-content,
+  .hero-card {
+    min-width: 0;
+  }
+
+  .feature-grid,
+  .resource-teaser-grid,
+  .resource-grid,
+  .member-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* v17: Home hero title should never create horizontal scrolling */
+.hero-title-grid {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.hero-title-grid .acronym-letter,
+.hero-title-grid .title-word {
+  min-width: 0;
+}
+
+@media (max-width: 560px) {
+  .hero-title-grid {
+    grid-template-columns: 0.72em minmax(0, 1fr);
+    column-gap: 0.10em;
+    font-size: clamp(2.0rem, 9.7vw, 3.0rem);
+    letter-spacing: -0.052em;
+  }
+
+  .hero-title-grid .title-word {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .brand-text small {
+    font-size: 0.72rem;
+  }
+}
+
+/* v17: member cards should remain inside the viewport even with long English affiliations */
+.member-card {
+  overflow: hidden;
+}
+
+.member-body,
+.member-name,
+.member-affiliation,
+.member-body p {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.member-affiliation {
+  overflow-wrap: anywhere;
+}

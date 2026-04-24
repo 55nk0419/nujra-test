@@ -139,3 +139,12 @@ Settings > Pages > Deploy from a branch > main > /root
   - esearcher
   - ssociation
 - Updated cache-busting query strings to `?v=16`.
+
+
+## v17 update
+
+- Added global mobile overflow protection.
+- Replaced overly strict mobile `word-break: keep-all` behavior with safer wrapping on small screens.
+- Forced grids, cards, sections, hero blocks, and member cards to stay within viewport width.
+- Added safer wrapping for long English affiliations and URLs.
+- Updated cache-busting query strings to `?v=17`.
