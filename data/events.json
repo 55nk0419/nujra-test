@@ -1,20 +1,38 @@
 [
   {
+    "date": "2026-05-11",
+    "type": "Planning",
+    "title": "NUJRA website and operations meeting",
+    "speaker": "NUJRA organizers",
+    "location": "Zoom",
+    "description": "HP管理、公式メール、入会フォーム、LINE/メーリス運用、名称変更などを整理するための幹事ミーティング。",
+    "url": ""
+  },
+  {
     "date": "2026-05",
+    "type": "Seminar",
     "title": "NUJRA Monthly Seminar",
     "speaker": "TBD",
-    "description": "月例勉強会の情報をここに掲載します。"
+    "location": "Online",
+    "description": "月例勉強会の情報をここに掲載します。",
+    "url": ""
   },
   {
     "date": "2026",
+    "type": "Joint meeting",
     "title": "NUJRA-JETRO Chicago Joint Meeting",
     "speaker": "NUJRA / JETRO Chicago",
-    "description": "研究成果の社会実装、キャリア形成、産学連携に関する交流企画。"
+    "location": "Chicago",
+    "description": "研究成果の社会実装、キャリア形成、産学連携に関する交流企画。",
+    "url": ""
   },
   {
     "date": "Archive",
+    "type": "Invited talk",
     "title": "Invited Special Seminars",
     "speaker": "Guest speakers",
-    "description": "過去の招待講演・オンラインセミナーをアーカイブします。"
+    "location": "Online / Chicago",
+    "description": "過去の招待講演・オンラインセミナーをアーカイブします。",
+    "url": ""
   }
 ]

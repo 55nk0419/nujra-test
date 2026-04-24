@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Resources | NUJRA</title>
+  <meta name="description" content="Practical resources for life in Chicago and research abroad." />
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="NUJRA home">
+        <div class="brand-mark">N</div>
+        <div class="brand-text">
+          <span>NUJRA</span>
+          <small>Japanese Researcher Association</small>
+        </div>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="">Home</a>
+<a href="about.html" class="">About</a>
+<a href="join.html" class="">Join</a>
+<a href="events.html" class="">Events</a>
+<a href="resources.html" class="active">Resources</a>
+<a href="contact.html" class="">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+<section class="page-hero">
+  <p class="kicker">Resources</p>
+  <h1>留学・生活お役立ち情報</h1>
+  <p class="lead">
+    住居、学校、車、SSN、運転免許、研究助成など、シカゴ生活に必要な情報を整理します。
+  </p>
+</section>
+
+<section class="section">
+  <div class="notice">
+    住居、治安、ビザ、運転免許、学校、家賃相場などは時間とともに変わります。各項目に最終更新日を入れ、古い情報は更新・注記してください。
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="section-heading row-heading">
+    <div>
+      <p class="kicker">Guide</p>
+      <h2>Resource list</h2>
+      <p>お役立ち情報は <code>data/resources.json</code> を編集すると更新できます。</p>
+    </div>
+
+    <label class="search-box">
+      <span>Search</span>
+      <input id="resourceSearch" type="search" placeholder="Housing, school, SSN..." />
+    </label>
+  </div>
+
+  <div class="filter-row" id="resourceFilterRow" aria-label="Resource filters"></div>
+  <div class="resource-grid" id="resourceList"></div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>NUJRA</strong><br />
+        Northwestern University Japanese Researcher Association
+      </div>
+      <div class="footer-note">
+        This is a GitHub Pages prototype. Replace form links and contact information before public launch.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

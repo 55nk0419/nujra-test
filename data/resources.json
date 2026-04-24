@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Housing",
+    "title": "住居・治安・通勤",
+    "description": "シカゴ周辺の住居選び、治安、通勤、契約時の注意点を整理します。",
+    "updated": "2026-04",
+    "url": ""
+  },
+  {
+    "category": "School",
+    "title": "小学校・保育園・サマーキャンプ",
+    "description": "子どもの学校、保育園、サマーキャンプに関する情報を整理します。",
+    "updated": "2026-04",
+    "url": ""
+  },
+  {
+    "category": "Life setup",
+    "title": "SSN・銀行・携帯・生活初期設定",
+    "description": "渡米直後に必要な手続きと生活立ち上げ情報をまとめます。",
+    "updated": "2026-04",
+    "url": ""
+  },
+  {
+    "category": "Car",
+    "title": "車・運転免許",
+    "description": "運転免許取得、更新、車購入、保険などの情報を整理します。",
+    "updated": "2026-04",
+    "url": ""
+  },
+  {
+    "category": "Funding",
+    "title": "フェローシップ・研究助成",
+    "description": "留学中に応募可能な研究助成やフェローシップ情報を整理します。",
+    "updated": "2026-04",
+    "url": ""
+  },
+  {
+    "category": "Career",
+    "title": "英語・キャリア・研究発信",
+    "description": "英語コミュニケーション、発表、ネットワーキング、キャリア形成に関する情報をまとめます。",
+    "updated": "2026-04",
+    "url": ""
+  }
+]
