@@ -70,6 +70,18 @@ Settings > Pages > Deploy from a branch > main > /root
 
 ## v9 update
 
-- Changed NUJRA initials from bright blue/green to a calmer Northwestern-style purple.
-- Gave the initials a fixed width so the following text starts in a more aligned position.
+- Removed per-letter highlighting inside the main title because it caused unstable mobile line breaks.
+- Added a separate NUJRA accent badge above the title.
+- The main title now keeps clean line starts:
+  - Northwestern University
+  - Japanese Researcher Association
 - Updated cache-busting query strings to `?v=9`.
+
+
+## v10 update
+
+- Changed the Home hero title to a two-column acronym grid.
+- The NUJRA letters are now blue and vertically aligned.
+- The full words start at the same x-position, avoiding jagged starts.
+- Removed the purple acronym badge.
+- Updated cache-busting query strings to `?v=10`.
