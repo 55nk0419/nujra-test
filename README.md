@@ -148,3 +148,12 @@ Settings > Pages > Deploy from a branch > main > /root
 - Forced grids, cards, sections, hero blocks, and member cards to stay within viewport width.
 - Added safer wrapping for long English affiliations and URLs.
 - Updated cache-busting query strings to `?v=17`.
+
+
+## v18 update
+
+- Added `resources/ssn.html` as the first full resource article.
+- Changed `data/resources.json` from broad category cards to article-style entries.
+- SSN article is clickable; other planned articles remain `準備中`.
+- Added article-specific CSS.
+- Updated cache-busting query strings to `?v=18`.

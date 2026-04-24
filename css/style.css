@@ -1277,3 +1277,78 @@ code {
 .member-affiliation {
   overflow-wrap: anywhere;
 }
+
+
+/* v18: Article pages */
+.article-hero {
+  padding-bottom: 28px;
+}
+
+.article-section {
+  padding-top: 8px;
+}
+
+.article-body {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: clamp(22px, 4vw, 42px);
+  box-shadow: var(--shadow);
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+}
+
+.article-body h2 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.article-body h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.12rem;
+}
+
+.article-body p,
+.article-body li {
+  color: #334155;
+  line-height: 1.9;
+}
+
+.article-body ul {
+  padding-left: 1.25rem;
+}
+
+.article-body a {
+  color: var(--blue-2);
+  font-weight: 760;
+  overflow-wrap: anywhere;
+}
+
+.article-links li {
+  margin-bottom: 8px;
+}
+
+.article-footer-nav {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.resource-card-link .card-action::after {
+  content: " →";
+}
+
+@media (max-width: 560px) {
+  .article-body {
+    border-radius: 22px;
+    padding: 22px 18px;
+  }
+
+  .article-body p,
+  .article-body li {
+    line-height: 1.85;
+  }
+}
