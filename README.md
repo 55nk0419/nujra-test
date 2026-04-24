@@ -157,3 +157,11 @@ Settings > Pages > Deploy from a branch > main > /root
 - SSN article is clickable; other planned articles remain `準備中`.
 - Added article-specific CSS.
 - Updated cache-busting query strings to `?v=18`.
+
+
+## v19 update
+
+- Added `alumni.html`.
+- Added `data/alumni.json` using the supplied past-member list.
+- Replaced the `過去メンバー 準備中` block in `members.html` with a link to the alumni page.
+- Updated cache-busting query strings to `?v=19`.

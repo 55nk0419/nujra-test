@@ -152,7 +152,17 @@ function emptyState(message) {
   return `<div class="empty-state">${escapeHtml(message)}</div>`;
 }
 
+
+async function initAlumniIfPresent() {
+  const list = document.getElementById("alumniList");
+  if (!list) return;
+
+  const alumni = await loadJson("data/alumni.json");
+  list.innerHTML = alumni.map(makeMemberCard).join("") || emptyState("過去メンバー情報はまだ登録されていません。");
+}
+
 setupMobileMenu();
 initHome();
 initResourcesPage();
 initMembersIfPresent();
+initAlumniIfPresent();
