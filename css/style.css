@@ -1067,3 +1067,19 @@ main {
     line-height: 1.02;
   }
 }
+
+
+/* v16: Fix duplicated first letters in Home hero title */
+.hero-title-grid {
+  grid-template-columns: 0.78em minmax(0, 1fr);
+  column-gap: 0.12em;
+}
+
+.hero-title-grid .acronym-letter {
+  text-align: center;
+  color: #2563eb;
+}
+
+.hero-title-grid .title-word {
+  text-align: left;
+}

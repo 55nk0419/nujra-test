@@ -127,3 +127,15 @@ Settings > Pages > Deploy from a branch > main > /root
 - The blue first-letter column now has a fixed width and centered letters.
 - The black second-letter text now starts at a consistent x-position with a small gap.
 - Updated cache-busting query strings to `?v=15`.
+
+
+## v16 update
+
+- Fixed duplicated first letters in the Home hero title.
+- The left blue column is `N U J R A`; the right black column now starts from the second letter:
+  - orthwestern
+  - niversity
+  - apanese
+  - esearcher
+  - ssociation
+- Updated cache-busting query strings to `?v=16`.
