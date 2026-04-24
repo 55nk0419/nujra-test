@@ -102,3 +102,12 @@ Settings > Pages > Deploy from a branch > main > /root
 - Removed initial avatar badges from member cards.
 - Fixed member card overflow by allowing long affiliations and descriptions to wrap inside cards.
 - Updated cache-busting query strings to `?v=12`.
+
+
+## v13 update
+
+- Unified content width across pages.
+- Removed the old full-bleed width behavior from `.section-soft`.
+- Made card grids responsive with `auto-fit` and safe minimum widths.
+- Added overflow protection to reduce horizontal scrolling on narrow screens and non-standard monitors.
+- Updated cache-busting query strings to `?v=13`.

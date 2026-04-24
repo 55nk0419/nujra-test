@@ -880,3 +880,97 @@ h3,
     grid-template-columns: 1fr;
   }
 }
+
+
+/* v13: Consistent content width and responsive layout */
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero,
+.page-hero,
+.section,
+.section-soft,
+.cta-section {
+  width: min(100%, var(--max));
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep soft sections the same content width as all other sections.
+   The old full-bleed width caused some pages to look much wider on large monitors. */
+.section-soft {
+  max-width: var(--max);
+  margin: 0 auto 26px;
+  padding: 36px 22px;
+  background:
+    linear-gradient(180deg, rgba(239, 246, 255, 0.82), rgba(248, 250, 252, 0.28));
+  border-radius: 28px;
+}
+
+.feature-grid,
+.resource-teaser-grid,
+.resource-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  width: 100%;
+}
+
+.member-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  width: 100%;
+}
+
+.feature-card,
+.resource-card,
+.data-card,
+.member-card,
+.info-box,
+.form-card,
+.notice {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.row-heading {
+  max-width: 100%;
+}
+
+.two-column {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+@media (max-width: 980px) {
+  .section-soft {
+    border-radius: 22px;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-soft {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
+    padding: 28px 16px;
+  }
+
+  .hero,
+  .page-hero,
+  .section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cta-section {
+    width: auto;
+  }
+}
