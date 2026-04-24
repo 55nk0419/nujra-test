@@ -1,146 +1,177 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+# NUJRA GitHub Pages Website
 
-  <title>NUJRA | Northwestern University Japanese Researcher Association</title>
-  <meta name="description" content="NUJRAはシカゴ周辺で活動する日本人研究者・医療者・留学生・専門職のコミュニティです。" />
-  <link rel="stylesheet" href="css/style.css?v=22" />
-  
-</head>
+NUJRAホームページの試作版です。
 
-<body>
-  <a class="skip-link" href="#main">本文へ移動</a>
+## 構成
 
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="/nujra-test/index.html?v=22" aria-label="NUJRA ホーム">
-        <div class="brand-mark">N</div>
-        <div class="brand-text">
-          <span>NUJRA</span>
-          <small>Japanese Researcher Association</small>
-        </div>
-      </a>
+- `index.html`: ホーム
+- `about.html`: NUJRAとは
+- `join.html`: 入会案内
+- `resources.html`: お役立ち情報
+- `contact.html`: お問い合わせ
+- `css/style.css`: デザイン
+- `js/main.js`: 検索・絞り込み・JSON表示
+- `data/members.json`: メンバー情報
+- `data/resources.json`: お役立ち情報
 
-      <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+## 通常更新
 
-      <nav class="site-nav" aria-label="メインナビゲーション">
-        <a href="/nujra-test/index.html?v=22" class="active">ホーム</a>
-<a href="/nujra-test/about.html?v=22" class="">NUJRAとは</a>
-<a href="/nujra-test/members.html?v=22" class="">メンバー</a>
-<a href="/nujra-test/join.html?v=22" class="">入会案内</a>
-<a href="/nujra-test/resources.html?v=22" class="">お役立ち情報</a>
-<a href="/nujra-test/contact.html?v=22" class="">お問い合わせ</a>
-      </nav>
-    </div>
-  </header>
+- お役立ち情報の追加: `data/resources.json`
+- メンバー情報の追加: `data/members.json`
 
-  <main id="main">
-    
-<section class="hero hero-home">
-  <div class="hero-content">
-    <div class="eyebrow">シカゴ周辺の日本人研究者コミュニティ</div>
-<h1 class="hero-title hero-title-grid" aria-label="Northwestern University Japanese Researcher Association">
-      <span class="acronym-letter">N</span><span class="title-word">orthwestern</span>
-      <span class="acronym-letter">U</span><span class="title-word">niversity</span>
-      <span class="acronym-letter">J</span><span class="title-word">apanese</span>
-      <span class="acronym-letter">R</span><span class="title-word">esearcher</span>
-      <span class="acronym-letter">A</span><span class="title-word">ssociation</span>
-    </h1>
-    <p class="lead">
-      NUJRAは、Northwestern Universityを中心に、シカゴ周辺で活動する日本人研究者・医療者・留学生・専門職の交流と情報共有を支援するコミュニティです。
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="join.html">入会案内を見る</a>
-      <a class="btn btn-secondary" href="resources.html">シカゴ生活情報を見る</a>
-    </div>
-  </div>
+## 差し替えが必要な仮リンク
 
-  <aside class="hero-card">
-    <h2>主な活動</h2>
-    <ul class="clean-list">
-      <li>月例勉強会・招待講演</li>
-      <li>研究者・家族を含む交流</li>
-      <li>シカゴ生活に役立つ情報共有</li>
-      <li>新規メンバーの参加支援</li>
-    </ul>
-  </aside>
-</section>
+以下を正式なGoogle Form URLに差し替えてください。
 
-<section class="section">
-  <div class="section-heading">
-    <p class="kicker">目的</p>
-    <h2>研究と生活の両方を支える、シカゴの日本人研究者コミュニティ</h2>
-    <p>
-      NUJRAは、研究情報交換、異分野交流、生活立ち上げ支援、歓送迎会などを通じて、
-      渡米直後から帰国後まで続くネットワークづくりを目指します。
-    </p>
-  </div>
+- `https://forms.gle/REPLACE_WITH_JOIN_FORM`
+- `https://forms.gle/REPLACE_WITH_CONTACT_FORM`
+- `https://forms.gle/REPLACE_WITH_LEAVE_FORM`
 
-  <div class="feature-grid">
-    <article class="feature-card">
-      <span class="tag">研究</span>
-      <h3>研究交流</h3>
-      <p>月例勉強会や招待講演を通じて、分野を越えた研究交流とコラボレーションのきっかけを作ります。</p>
-    </article>
+## GitHub Pages
 
-    <article class="feature-card">
-      <span class="tag">生活</span>
-      <h3>生活支援</h3>
-      <p>住居、学校、車、生活立ち上げなど、シカゴ生活に関する実践的な情報を共有します。</p>
-    </article>
+Settings > Pages > Deploy from a branch > main > /root
 
-    <article class="feature-card">
-      <span class="tag">交流</span>
-      <h3>人的ネットワーク</h3>
-      <p>研究者、医療者、留学生、家族を含むコミュニティとして、継続的なつながりを育てます。</p>
-    </article>
-  </div>
-</section>
 
-<section class="section section-soft">
-  <div class="section-heading row-heading">
-    <div>
-      <p class="kicker">お役立ち情報</p>
-      <h2>シカゴ生活情報</h2>
-      <p>渡米直後に必要になりやすい情報を、テーマ別に整理します。各項目に最終更新日を入れて管理します。</p>
-    </div>
-    <a class="text-link" href="resources.html">一覧を見る</a>
-  </div>
+## v4 update
 
-  <div class="resource-teaser-grid" id="homeResourceList" data-limit="6"></div>
-</section>
+- Removed search box and category filter from the resources page.
+- Resource items are now simple direct-click cards.
+- Cards with no URL show `準備中`.
 
-<section class="cta-section">
-  <div>
-    <p class="kicker">入会</p>
-    <h2>NUJRAに参加する</h2>
-    <p>
-      入会希望の方は入会フォームをご記入ください。幹事が確認後、メーリングリストやLINEグループへの案内を行います。
-    </p>
-  </div>
-  <a class="btn btn-primary" href="join.html">入会案内を見る</a>
-</section>
 
-  </main>
+## v5 update
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div>
-        <strong>NUJRA</strong><br />
-        Northwestern University Japanese Researcher Association
-      </div>
-      <div class="footer-note">
-        GitHub Pagesで試験公開中です。フォームURLと連絡先は正式公開前に差し替えてください。
-      </div>
-    </div>
-  </footer>
+- Updated the resources page notice text.
+- Added Japanese line-breaking rules to reduce awkward line breaks such as `しま / す`.
+- Added CSS/JS cache-busting query strings `?v=5`.
 
-  <script src="js/main.js?v=22"></script>
-</body>
-</html>
+
+## v6 update
+
+- Home hero title now highlights the NUJRA acronym letters: N, U, J, R, A.
+- Updated CSS/JS cache-busting query strings to `?v=6`.
+
+
+## v7 update
+
+- Fixed NUJRA acronym highlighting in the Home hero title.
+- Changed `.hero-title span` to `.hero-title .title-line` to avoid affecting nested acronym letters.
+- Strengthened acronym-letter styling with `!important` and `-webkit-text-fill-color`.
+- Updated cache-busting query strings to `?v=7`.
+
+
+## v8 update
+
+- Fixed mobile title wrapping.
+- Wrapped full words (`Northwestern`, `University`, etc.) in `.title-word` so the acronym letters do not break away from the words.
+- Added mobile-specific hero title sizing.
+- Updated cache-busting query strings to `?v=8`.
+
+
+## v9 update
+
+- Removed per-letter highlighting inside the main title because it caused unstable mobile line breaks.
+- Added a separate NUJRA accent badge above the title.
+- The main title now keeps clean line starts:
+  - Northwestern University
+  - Japanese Researcher Association
+- Updated cache-busting query strings to `?v=9`.
+
+
+## v10 update
+
+- Changed the Home hero title to a two-column acronym grid.
+- The NUJRA letters are now blue and vertically aligned.
+- The full words start at the same x-position, avoiding jagged starts.
+- Removed the purple acronym badge.
+- Updated cache-busting query strings to `?v=10`.
+
+
+## v11 update
+
+- Added `members.html`.
+- Added `メンバー` to the main menu.
+- Updated `data/members.json` with organizers, former organizers/co-founders, and 2024 members based on the supplied old NUJRA page text.
+- Past member archive is shown as `準備中`.
+- Updated cache-busting query strings to `?v=11`.
+
+
+## v12 update
+
+- Removed the internal publication-check notice from `members.html`.
+- Removed initial avatar badges from member cards.
+- Fixed member card overflow by allowing long affiliations and descriptions to wrap inside cards.
+- Updated cache-busting query strings to `?v=12`.
+
+
+## v13 update
+
+- Unified content width across pages.
+- Removed the old full-bleed width behavior from `.section-soft`.
+- Made card grids responsive with `auto-fit` and safe minimum widths.
+- Added overflow protection to reduce horizontal scrolling on narrow screens and non-standard monitors.
+- Updated cache-busting query strings to `?v=13`.
+
+
+## v14 update
+
+- Fixed hero title styling so only the first letter of each word is blue.
+- Ensured the remainder of each word is black.
+- Corrected title alignment so N/U/J/R/A no longer look duplicated or staggered.
+- Updated cache-busting query strings to `?v=14`.
+
+
+## v15 update
+
+- Fixed Home hero acronym alignment.
+- The blue first-letter column now has a fixed width and centered letters.
+- The black second-letter text now starts at a consistent x-position with a small gap.
+- Updated cache-busting query strings to `?v=15`.
+
+
+## v16 update
+
+- Fixed duplicated first letters in the Home hero title.
+- The left blue column is `N U J R A`; the right black column now starts from the second letter:
+  - orthwestern
+  - niversity
+  - apanese
+  - esearcher
+  - ssociation
+- Updated cache-busting query strings to `?v=16`.
+
+
+## v17 update
+
+- Added global mobile overflow protection.
+- Replaced overly strict mobile `word-break: keep-all` behavior with safer wrapping on small screens.
+- Forced grids, cards, sections, hero blocks, and member cards to stay within viewport width.
+- Added safer wrapping for long English affiliations and URLs.
+- Updated cache-busting query strings to `?v=17`.
+
+
+## v18 update
+
+- Added `resources/ssn.html` as the first full resource article.
+- Changed `data/resources.json` from broad category cards to article-style entries.
+- SSN article is clickable; other planned articles remain `準備中`.
+- Added article-specific CSS.
+- Updated cache-busting query strings to `?v=18`.
+
+
+## v19 update
+
+- Added `alumni.html`.
+- Added `data/alumni.json` using the supplied past-member list.
+- Replaced the `過去メンバー 準備中` block in `members.html` with a link to the alumni page.
+- Updated cache-busting query strings to `?v=19`.
+
+
+## v19 folder deployment
+
+Upload the entire `v19/` folder to the repository root.
+
+Test URL:
+https://55nk0419.github.io/nujra-test/v19/
+
+All navigation links are relative and stay inside the `v19/` folder.
