@@ -66,3 +66,10 @@ Settings > Pages > Deploy from a branch > main > /root
 - Wrapped full words (`Northwestern`, `University`, etc.) in `.title-word` so the acronym letters do not break away from the words.
 - Added mobile-specific hero title sizing.
 - Updated cache-busting query strings to `?v=8`.
+
+
+## v9 update
+
+- Changed NUJRA initials from bright blue/green to a calmer Northwestern-style purple.
+- Gave the initials a fixed width so the following text starts in a more aligned position.
+- Updated cache-busting query strings to `?v=9`.

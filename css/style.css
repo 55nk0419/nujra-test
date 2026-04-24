@@ -714,16 +714,7 @@ h3,
 
 
 
-.hero-title .acronym-letter {
-  display: inline-block !important;
-  color: #2563eb !important;
-  background: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 52%, #22c55e 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
-  filter: drop-shadow(0 3px 6px rgba(37, 99, 235, 0.18));
-}
+
 
 
 /* Mobile hero title adjustment */
@@ -740,5 +731,46 @@ h3,
 
   .hero-title .title-word {
     margin-right: 0.04em;
+  }
+}
+
+
+/* Refined NUJRA initials */
+.hero-title .acronym-letter {
+  display: inline-block;
+  width: 0.72em;
+  color: #4e2a84;
+  -webkit-text-fill-color: #4e2a84;
+  background: none;
+  text-shadow: none;
+  filter: none;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Better alignment and calmer spacing */
+.hero-title {
+  max-width: 9.2ch;
+}
+
+.hero-title .title-line {
+  margin-bottom: 0.02em;
+}
+
+.hero-title .title-word {
+  margin-right: 0.02em;
+}
+
+/* Mobile tuning */
+@media (max-width: 560px) {
+  .hero-title {
+    font-size: clamp(2.2rem, 10vw, 3.1rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    max-width: 8.8ch;
+  }
+
+  .hero-title .acronym-letter {
+    width: 0.74em;
   }
 }
