@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2026-05",
+    "title": "NUJRA Monthly Seminar",
+    "speaker": "TBD",
+    "description": "月例勉強会の情報をここに掲載します。"
+  },
+  {
+    "date": "2026",
+    "title": "NUJRA-JETRO Chicago Joint Meeting",
+    "speaker": "NUJRA / JETRO Chicago",
+    "description": "研究成果の社会実装、キャリア形成、産学連携に関する交流企画。"
+  },
+  {
+    "date": "Archive",
+    "title": "Invited Special Seminars",
+    "speaker": "Guest speakers",
+    "description": "過去の招待講演・オンラインセミナーをアーカイブします。"
+  }
+]
