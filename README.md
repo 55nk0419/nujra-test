@@ -85,3 +85,12 @@ Settings > Pages > Deploy from a branch > main > /root
 - The full words start at the same x-position, avoiding jagged starts.
 - Removed the purple acronym badge.
 - Updated cache-busting query strings to `?v=10`.
+
+
+## v11 update
+
+- Added `members.html`.
+- Added `メンバー` to the main menu.
+- Updated `data/members.json` with organizers, former organizers/co-founders, and 2024 members based on the supplied old NUJRA page text.
+- Past member archive is shown as `準備中`.
+- Updated cache-busting query strings to `?v=11`.

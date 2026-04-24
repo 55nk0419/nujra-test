@@ -25,6 +25,14 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function getInitials(name) {
+  const parts = String(name).trim().split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) {
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  }
+  return parts[0] ? parts[0].slice(0, 2).toUpperCase() : "N";
+}
+
 function setupMobileMenu() {
   const button = document.querySelector(".menu-button");
   const nav = document.querySelector(".site-nav");
@@ -61,13 +69,20 @@ function makeResourceCard(item) {
 }
 
 function makeMemberCard(item) {
-  const field = item.field ? ` · ${escapeHtml(item.field)}` : "";
+  const initials = getInitials(item.nameEn || item.nameJa || "");
+  const description = item.description ? `<p>${escapeHtml(item.description)}</p>` : `<p class="muted-text">紹介文は準備中です。</p>`;
+
   return `
-    <article class="data-card">
-      <div class="meta">${escapeHtml(item.role)} · ${escapeHtml(item.affiliation)}${field}</div>
-      <h3>${escapeHtml(item.name)}</h3>
-      <p>${escapeHtml(item.description)}</p>
-      ${item.url ? `<a class="text-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">プロフィール / ラボ</a>` : ""}
+    <article class="member-card">
+      <div class="member-avatar" aria-hidden="true">${escapeHtml(initials)}</div>
+      <div class="member-body">
+        <div class="member-name">
+          <h3>${escapeHtml(item.nameJa)}</h3>
+          <span>${escapeHtml(item.nameEn)}</span>
+        </div>
+        <div class="member-affiliation">${escapeHtml(item.affiliation)}</div>
+        ${description}
+      </div>
     </article>
   `;
 }
@@ -121,11 +136,25 @@ async function initResourcesPage() {
 }
 
 async function initMembersIfPresent() {
-  const list = document.getElementById("memberList");
-  if (!list) return;
+  const allMembers = await loadJson("data/members.json");
 
-  const members = await loadJson("data/members.json");
-  list.innerHTML = members.map(makeMemberCard).join("") || emptyState("メンバー情報はまだ登録されていません。");
+  const targets = [
+    { id: "organizerList", category: "幹事" },
+    { id: "formerOrganizerList", category: "元幹事・創設メンバー" },
+    { id: "currentMemberList", category: "2024年度メンバー" },
+    { id: "memberList", category: null }
+  ];
+
+  targets.forEach(target => {
+    const container = document.getElementById(target.id);
+    if (!container) return;
+
+    const members = target.category
+      ? allMembers.filter(member => member.category === target.category)
+      : allMembers;
+
+    container.innerHTML = members.map(makeMemberCard).join("") || emptyState("メンバー情報はまだ登録されていません。");
+  });
 }
 
 function emptyState(message) {
