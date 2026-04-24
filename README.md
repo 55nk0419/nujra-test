@@ -94,3 +94,11 @@ Settings > Pages > Deploy from a branch > main > /root
 - Updated `data/members.json` with organizers, former organizers/co-founders, and 2024 members based on the supplied old NUJRA page text.
 - Past member archive is shown as `準備中`.
 - Updated cache-busting query strings to `?v=11`.
+
+
+## v12 update
+
+- Removed the internal publication-check notice from `members.html`.
+- Removed initial avatar badges from member cards.
+- Fixed member card overflow by allowing long affiliations and descriptions to wrap inside cards.
+- Updated cache-busting query strings to `?v=12`.

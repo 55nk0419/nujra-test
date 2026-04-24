@@ -25,13 +25,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function getInitials(name) {
-  const parts = String(name).trim().split(/\s+/).filter(Boolean);
-  if (parts.length >= 2) {
-    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-  }
-  return parts[0] ? parts[0].slice(0, 2).toUpperCase() : "N";
-}
 
 function setupMobileMenu() {
   const button = document.querySelector(".menu-button");
@@ -69,12 +62,10 @@ function makeResourceCard(item) {
 }
 
 function makeMemberCard(item) {
-  const initials = getInitials(item.nameEn || item.nameJa || "");
   const description = item.description ? `<p>${escapeHtml(item.description)}</p>` : `<p class="muted-text">紹介文は準備中です。</p>`;
 
   return `
     <article class="member-card">
-      <div class="member-avatar" aria-hidden="true">${escapeHtml(initials)}</div>
       <div class="member-body">
         <div class="member-name">
           <h3>${escapeHtml(item.nameJa)}</h3>
