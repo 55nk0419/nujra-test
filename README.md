@@ -37,3 +37,16 @@ Settings > Pages > Deploy from a branch > main > /root
 - Removed search box and category filter from the resources page.
 - Resource items are now simple direct-click cards.
 - Cards with no URL show `準備中`.
+
+
+## v5 update
+
+- Updated the resources page notice text.
+- Added Japanese line-breaking rules to reduce awkward line breaks such as `しま / す`.
+- Added CSS/JS cache-busting query strings `?v=5`.
+
+
+## v6 update
+
+- Home hero title now highlights the NUJRA acronym letters: N, U, J, R, A.
+- Updated CSS/JS cache-busting query strings to `?v=6`.

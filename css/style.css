@@ -677,3 +677,39 @@ p {
 .resource-card-disabled .card-action {
   color: var(--muted);
 }
+
+
+/* Japanese line-breaking adjustment */
+body {
+  line-break: strict;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+.lead,
+.notice,
+.feature-card,
+.resource-card,
+.data-card,
+.info-box,
+.form-card {
+  line-break: strict;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+
+.acronym-letter {
+  display: inline-block;
+  color: #2563eb;
+  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 55%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 10px 26px rgba(37, 99, 235, 0.20);
+}
