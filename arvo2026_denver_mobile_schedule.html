@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARVO 2026 Denver Schedule</title>
+<style>
+:root{--bg:#f7f7fb;--card:#fff;--text:#111827;--muted:#6b7280;--line:#e5e7eb;--blue:#2563eb;--yellow:#fff1b8;--yellow-border:#e5b800;--green:#0f766e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",Arial,sans-serif;line-height:1.45}header{position:sticky;top:0;z-index:10;background:rgba(247,247,251,.98);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px}h1{font-size:18px;margin:0 0 8px}.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px;white-space:nowrap}.tab.active{background:var(--blue);color:#fff;border-color:var(--blue)}.controls{display:grid;grid-template-columns:1fr 1fr;gap:6px}input,select{width:100%;border:1px solid var(--line);border-radius:12px;padding:9px 10px;font-size:14px;background:#fff}.check{grid-column:1/3;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}.check label{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 10px}.count{font-size:13px;color:var(--muted);padding:10px 12px 0}main{padding:0 12px 28px}.day{margin-top:14px}.day h2{font-size:22px;margin:10px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;margin-bottom:10px;box-shadow:0 8px 24px rgba(15,23,42,.07)}.card.action{background:linear-gradient(0deg,rgba(255,241,184,.65),rgba(255,255,255,.96));border-color:var(--yellow-border)}.top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.time{font-weight:800;color:var(--blue);font-size:16px;min-width:96px}.badges{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.badge{font-size:11px;font-weight:700;border-radius:999px;background:#eaf1ff;color:#1d4ed8;padding:4px 8px}.badge.status{background:#e6fffb;color:var(--green)}.badge.candidate{background:#f3f4f6;color:#6b7280}.badge.action{background:var(--yellow);color:#7a4b00}.person{font-size:13px;color:var(--muted);margin-top:5px}.title{font-size:16px;font-weight:800;margin-top:5px}.en{font-size:13px;color:#374151;margin-top:4px}.meta{border-top:1px solid var(--line);margin-top:8px;padding-top:8px;font-size:12px;color:#374151;display:grid;gap:4px}.meta div{display:flex;gap:6px}.meta span{color:var(--muted);min-width:68px}.memo{margin-top:8px;background:#f9fafb;border-radius:12px;padding:8px 9px;font-size:12px;color:#374151}.hidden{display:none!important}.empty{display:none;text-align:center;color:var(--muted);padding:36px 12px}@media(min-width:760px){.controls{grid-template-columns:1.4fr .8fr .8fr .8fr}.check{grid-column:auto}.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{margin-bottom:0}}
+</style>
+</head>
+<body>
+<header>
+<h1>ARVO 2026 Denver Schedule</h1>
+<div class="tabs" id="tabs">
+<button class="tab active" data-date="all">全日</button><button class="tab" data-date="5/3 日">5/3</button><button class="tab" data-date="5/4 月">5/4</button><button class="tab" data-date="5/5 火">5/5</button><button class="tab" data-date="5/6 水">5/6</button><button class="tab" data-date="5/7 木">5/7</button>
+</div>
+<div class="controls">
+<input id="q" type="search" placeholder="検索：発表者・タイトル・会場">
+<select id="type"><option value="">区分すべて</option><option>移動</option><option>ホテル</option><option>事務</option><option>イベント</option><option>口演</option><option>ポスター</option></select>
+<select id="status"><option value="">状況すべて</option><option>必須</option><option>確定</option><option>参加予定</option><option>一部参加予定</option><option>発表</option><option>予定</option><option>推奨</option><option>任意（立ち寄り可）</option><option>候補</option><option>候補・厳しめ</option><option>候補・ギリギリ</option><option>候補・現実的</option><option>候補・重複</option><option>候補・一部のみ</option></select>
+<select id="sort"><option value="time">時間順</option><option value="action">参加・必須優先</option><option value="type">区分順</option></select>
+<div class="check"><label><input id="actionOnly" type="checkbox"> 参加・必須だけ</label><span>黄色＝参加・行動必須</span></div>
+</div>
+</header>
+<div class="count" id="count"></div>
+<main id="main"><section class="day" data-date="5/3 日"><h2>5/3 日</h2><div class="cards">
+<article class="card action" data-date="5/3 日" data-type="移動" data-status="確定" data-action="true" data-time="01-0649" data-search="5/3 日 10:49 12:45 移動  シカゴordからデンバーdenへ移動 chicago ord → denver den 確定 ua1803  seat 31c。">
+  <div class="top"><div class="time">10:49–12:45</div><div class="badges"><span class="badge">移動</span><span class="badge action">確定</span></div></div>
+  
+  <div class="title">シカゴORDからデンバーDENへ移動</div>
+  <div class="en">Chicago ORD → Denver DEN</div>
+  <div class="meta"><div><span>会場</span><b>UA1803</b></div></div>
+  <div class="memo">Seat 31C。</div>
+</article>
+<article class="card action" data-date="5/3 日" data-type="移動" data-status="確定" data-action="true" data-time="01-0780" data-search="5/3 日 13:00 14:30頃 移動  デンバー空港からhotel teatroへ移動 den → downtown denver / hotel teatro 確定 denver international airport → hotel teatro  到着後、荷物回収・移動。">
+  <div class="top"><div class="time">13:00–14:30頃</div><div class="badges"><span class="badge">移動</span><span class="badge action">確定</span></div></div>
+  
+  <div class="title">デンバー空港からHotel Teatroへ移動</div>
+  <div class="en">DEN → downtown Denver / Hotel Teatro</div>
+  <div class="meta"><div><span>会場</span><b>Denver International Airport → Hotel Teatro</b></div></div>
+  <div class="memo">到着後、荷物回収・移動。</div>
+</article>
+<article class="card action" data-date="5/3 日" data-type="ホテル" data-status="確定" data-action="true" data-time="01-0840" data-search="5/3 日 到着後  ホテル  hotel teatroチェックイン／荷物預け hotel teatro check-in / luggage drop 確定 hotel teatro, 1100 14th st, denver, co 80202  5/3–5/7の4泊。予約番号 9014785388689。">
+  <div class="top"><div class="time">到着後</div><div class="badges"><span class="badge">ホテル</span><span class="badge action">確定</span></div></div>
+  
+  <div class="title">Hotel Teatroチェックイン／荷物預け</div>
+  <div class="en">Hotel Teatro check-in / luggage drop</div>
+  <div class="meta"><div><span>会場</span><b>Hotel Teatro, 1100 14th St, Denver, CO 80202</b></div></div>
+  <div class="memo">5/3–5/7の4泊。予約番号 9014785388689。</div>
+</article>
+<article class="card action" data-date="5/3 日" data-type="事務" data-status="必須" data-action="true" data-time="01-0840" data-search="5/3 日 到着後  事務  バッジ印刷／travel grant packet受取 badge printing / travel grant packet pickup 必須 colorado convention center  travel grant packetはarvo central in exhibit hall。">
+  <div class="top"><div class="time">到着後</div><div class="badges"><span class="badge">事務</span><span class="badge action">必須</span></div></div>
+  
+  <div class="title">バッジ印刷／Travel Grant packet受取</div>
+  <div class="en">Badge printing / Travel Grant packet pickup</div>
+  <div class="meta"><div><span>会場</span><b>Colorado Convention Center</b></div></div>
+  <div class="memo">Travel Grant packetはARVO Central in Exhibit Hall。</div>
+</article>
+<article class="card action" data-date="5/3 日" data-type="事務" data-status="必須" data-action="true" data-time="01-0840" data-search="5/3 日 到着後  事務  speaker ready roomでスライド確認 speaker ready room check-in / slide confirmation 必須 colorado convention center, room 501  オンライン提出済みでも現地確認が必要。">
+  <div class="top"><div class="time">到着後</div><div class="badges"><span class="badge">事務</span><span class="badge action">必須</span></div></div>
+  
+  <div class="title">Speaker Ready Roomでスライド確認</div>
+  <div class="en">Speaker Ready Room check-in / slide confirmation</div>
+  <div class="meta"><div><span>会場</span><b>Colorado Convention Center, Room 501</b></div></div>
+  <div class="memo">オンライン提出済みでも現地確認が必要。</div>
+</article>
+<article class="card " data-date="5/3 日" data-type="イベント" data-status="任意（立ち寄り可）" data-action="false" data-time="01-0840" data-search="5/3 日 到着後 17:00 イベント  マイティアサロン mytear salon 任意（立ち寄り可） le meridien denver downtown 2f kebler pass2  好きな時に立ち寄り可。必須ではないためハイライト対象外。">
+  <div class="top"><div class="time">到着後–17:00</div><div class="badges"><span class="badge">イベント</span><span class="badge status">任意（立ち寄り可）</span></div></div>
+  
+  <div class="title">マイティアサロン</div>
+  <div class="en">Mytear Salon</div>
+  <div class="meta"><div><span>会場</span><b>Le Meridien Denver Downtown 2F Kebler Pass2</b></div></div>
+  <div class="memo">好きな時に立ち寄り可。必須ではないためハイライト対象外。</div>
+</article>
+<article class="card " data-date="5/3 日" data-type="口演" data-status="候補・厳しめ" data-action="false" data-time="01-0918" data-search="5/3 日 15:18 15:35 口演 vinit b mahajan プロテオミッククロックはヒト眼疾患における加速老化を明らかにする proteomic clocks reveal accelerated aging in human eye disease 候補・厳しめ mile high 1a session 137 / no. 812 ">
+  <div class="top"><div class="time">15:18–15:35</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補・厳しめ</span></div></div>
+  <div class="person">Vinit B Mahajan</div>
+  <div class="title">プロテオミッククロックはヒト眼疾患における加速老化を明らかにする</div>
+  <div class="en">Proteomic clocks reveal accelerated aging in human eye disease</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 1A</b></div><div><span>ID</span><b>Session 137 / No. 812</b></div></div>
+  
+</article>
+<article class="card " data-date="5/3 日" data-type="口演" data-status="候補・厳しめ" data-action="false" data-time="01-0930" data-search="5/3 日 15:30 15:45 口演 john cheriyan rgc細胞種における機械感受性の動的制御 dynamic regulation of mechanosensation in retinal ganglion cell types 候補・厳しめ mile high 4a session 143 / no. 854 ">
+  <div class="top"><div class="time">15:30–15:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補・厳しめ</span></div></div>
+  <div class="person">John Cheriyan</div>
+  <div class="title">RGC細胞種における機械感受性の動的制御</div>
+  <div class="en">Dynamic regulation of mechanosensation in retinal ganglion cell types</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4A</b></div><div><span>ID</span><b>Session 143 / No. 854</b></div></div>
+  
+</article>
+<article class="card " data-date="5/3 日" data-type="口演" data-status="候補・ギリギリ" data-action="false" data-time="01-0952" data-search="5/3 日 15:52 16:09 口演 anand swaroop 老化した杆体視細胞におけるクロマチンリモデリングと代謝制御 chromatin remodeling and metabolic control of aging rod photoreceptors 候補・ギリギリ mile high 1a session 137 / no. 814 ">
+  <div class="top"><div class="time">15:52–16:09</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補・ギリギリ</span></div></div>
+  <div class="person">Anand Swaroop</div>
+  <div class="title">老化した杆体視細胞におけるクロマチンリモデリングと代謝制御</div>
+  <div class="en">Chromatin remodeling and metabolic control of aging rod photoreceptors</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 1A</b></div><div><span>ID</span><b>Session 137 / No. 814</b></div></div>
+  
+</article>
+<article class="card " data-date="5/3 日" data-type="口演" data-status="候補・現実的" data-action="false" data-time="01-1003" data-search="5/3 日 16:43 17:00 口演 bruce ksander 緑内障におけるrgc若返りを目的とした一過性エピジェネティックリプログラミング transient epigenetic reprogramming to rejuvenate retinal ganglion cells during glaucoma 候補・現実的 mile high 1a session 137 / no. 817 ">
+  <div class="top"><div class="time">16:43–17:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補・現実的</span></div></div>
+  <div class="person">Bruce Ksander</div>
+  <div class="title">緑内障におけるRGC若返りを目的とした一過性エピジェネティックリプログラミング</div>
+  <div class="en">Transient epigenetic reprogramming to rejuvenate retinal ganglion cells during glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 1A</b></div><div><span>ID</span><b>Session 137 / No. 817</b></div></div>
+  
+</article>
+<article class="card action" data-date="5/3 日" data-type="イベント" data-status="参加予定" data-action="true" data-time="01-1110" data-search="5/3 日 18:30 20:20 イベント  senju-orm／all englishの会 senju-orm / all english meeting 参加予定 le meridien denver downtown 2f the grove2  英語発表会、social gatheringあり。">
+  <div class="top"><div class="time">18:30–20:20</div><div class="badges"><span class="badge">イベント</span><span class="badge action">参加予定</span></div></div>
+  
+  <div class="title">SENJU-ORM／All Englishの会</div>
+  <div class="en">SENJU-ORM / All English meeting</div>
+  <div class="meta"><div><span>会場</span><b>Le Meridien Denver Downtown 2F The Grove2</b></div></div>
+  <div class="memo">英語発表会、social gatheringあり。</div>
+</article></div></section><section class="day" data-date="5/4 月"><h2>5/4 月</h2><div class="cards">
+<article class="card " data-date="5/4 月" data-type="イベント" data-status="任意（立ち寄り可）" data-action="false" data-time="02-0540" data-search="5/4 月 9:00 17:00 イベント  マイティアサロン mytear salon 任意（立ち寄り可） le meridien denver downtown 2f kebler pass2  好きな時に立ち寄り可。必須ではないためハイライト対象外。">
+  <div class="top"><div class="time">9:00–17:00</div><div class="badges"><span class="badge">イベント</span><span class="badge status">任意（立ち寄り可）</span></div></div>
+  
+  <div class="title">マイティアサロン</div>
+  <div class="en">Mytear Salon</div>
+  <div class="meta"><div><span>会場</span><b>Le Meridien Denver Downtown 2F Kebler Pass2</b></div></div>
+  <div class="memo">好きな時に立ち寄り可。必須ではないためハイライト対象外。</div>
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0675" data-search="5/4 月 11:15 11:30 口演 jamie e craig 改良された認証済み緑内障ポリジェニックリスクスコアは緑内障手術介入と強く関連する a markedly improved accredited glaucoma polygenic risk score is strongly associated with surgical intervention in glaucoma 候補 mile high 4e session 212 / no. 1398 ">
+  <div class="top"><div class="time">11:15–11:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Jamie E Craig</div>
+  <div class="title">改良された認証済み緑内障ポリジェニックリスクスコアは緑内障手術介入と強く関連する</div>
+  <div class="en">A markedly improved accredited glaucoma polygenic risk score is strongly associated with surgical intervention in glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 212 / No. 1398</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0675" data-search="5/4 月 11:15 11:30 口演 ester reina-torres ラット前眼部器官培養灌流システムの開発 development of a rat anterior-segment organ culture perfusion system 候補 bluebird ballroom 1a session 201 / no. 1322 ">
+  <div class="top"><div class="time">11:15–11:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Ester Reina-Torres</div>
+  <div class="title">ラット前眼部器官培養灌流システムの開発</div>
+  <div class="en">Development of a rat anterior-segment organ culture perfusion system</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 201 / No. 1322</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0690" data-search="5/4 月 11:30 11:45 口演 kana orihara 非ヒト霊長類の実験的緑内障におけるrgc、軸索束、血管系のin vivo縦断的ao-octイメージング in vivo longitudinal ao-oct imaging of retinal ganglion cells, axon bundles and vasculature in nonhuman primate experimental glaucoma 候補 mile high 2c/3c session 209 / no. 1378 ">
+  <div class="top"><div class="time">11:30–11:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Kana Orihara</div>
+  <div class="title">非ヒト霊長類の実験的緑内障におけるRGC、軸索束、血管系のin vivo縦断的AO-OCTイメージング</div>
+  <div class="en">In vivo longitudinal AO-OCT imaging of retinal ganglion cells, axon bundles and vasculature in nonhuman primate experimental glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 2C/3C</b></div><div><span>ID</span><b>Session 209 / No. 1378</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0690" data-search="5/4 月 11:30 11:45 口演 alexandra anne zamitalo フローセンシングシャントを用いた単一ラット眼の房水動態の定量 quantifying aqueous humor dynamics in a single rat eye using a flow-sensing shunt 候補 bluebird ballroom 1a session 201 / no. 1323 ">
+  <div class="top"><div class="time">11:30–11:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Alexandra Anne Zamitalo</div>
+  <div class="title">フローセンシングシャントを用いた単一ラット眼の房水動態の定量</div>
+  <div class="en">Quantifying aqueous humor dynamics in a single rat eye using a flow-sensing shunt</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 201 / No. 1323</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0705" data-search="5/4 月 11:45 12:00 口演 hoi-lam li レーザー誘発高眼圧サル眼における線維柱帯流出とぶどう膜強膜流出の相関を規定する因子 factors underlying correlated trabecular and uveoscleral outflow in laser-induced ocular hypertensive monkey eyes 候補 bluebird ballroom 1a session 201 / no. 1324 ">
+  <div class="top"><div class="time">11:45–12:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Hoi-Lam Li</div>
+  <div class="title">レーザー誘発高眼圧サル眼における線維柱帯流出とぶどう膜強膜流出の相関を規定する因子</div>
+  <div class="en">Factors Underlying Correlated Trabecular and Uveoscleral Outflow in Laser-Induced Ocular Hypertensive Monkey Eyes</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 201 / No. 1324</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0720" data-search="5/4 月 12:00 12:15 口演 lindsey kukoly ap-2βの出生後欠失が房水流出路の恒常性に及ぼす影響の検討 investigating post-natal deletion of ap-2β on the homeostasis of the outflow pathway 候補 bluebird ballroom 1a session 201 / no. 1325 ">
+  <div class="top"><div class="time">12:00–12:15</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Lindsey Kukoly</div>
+  <div class="title">AP-2βの出生後欠失が房水流出路の恒常性に及ぼす影響の検討</div>
+  <div class="en">Investigating post-natal deletion of AP-2β on the homeostasis of the outflow pathway</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 201 / No. 1325</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0735" data-search="5/4 月 12:15 12:30 口演 lal krishan kumar 脂質代謝異常はtm機能を障害し、緑内障における眼圧を調節する dysregulated lipid metabolism impairs trabecular meshwork function and modulates intraocular pressure in glaucoma 候補 bluebird ballroom 1a session 201 / no. 1326 ">
+  <div class="top"><div class="time">12:15–12:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Lal Krishan Kumar</div>
+  <div class="title">脂質代謝異常はTM機能を障害し、緑内障における眼圧を調節する</div>
+  <div class="en">Dysregulated Lipid Metabolism Impairs Trabecular Meshwork Function and Modulates Intraocular Pressure in Glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 201 / No. 1326</b></div></div>
+  
+</article>
+<article class="card " data-date="5/4 月" data-type="口演" data-status="候補" data-action="false" data-time="02-0750" data-search="5/4 月 12:30 12:45 口演 christian van oterendorp ヒトドナー眼における房水流出路の3d-oct血管造影 3d-oct-angiography of the aqueous outflow pathway in human donor eyes 候補 bluebird ballroom 1a session 201 / no. 1327 ">
+  <div class="top"><div class="time">12:30–12:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Christian van Oterendorp</div>
+  <div class="title">ヒトドナー眼における房水流出路の3D-OCT血管造影</div>
+  <div class="en">3D-OCT-Angiography of the Aqueous Outflow Pathway in Human Donor Eyes</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 201 / No. 1327</b></div></div>
+  
+</article>
+<article class="card action" data-date="5/4 月" data-type="イベント" data-status="参加予定" data-action="true" data-time="02-1070" data-search="5/4 月 17:50 17:55 イベント  travel grant写真撮影集合 travel grant photo session check-in 参加予定 colorado convention center, meeting room level, 14th street / blue bear側階段付近  rsvpはarvo返信待ち。5分前到着推奨。">
+  <div class="top"><div class="time">17:50–17:55</div><div class="badges"><span class="badge">イベント</span><span class="badge action">参加予定</span></div></div>
+  
+  <div class="title">Travel Grant写真撮影集合</div>
+  <div class="en">Travel Grant photo session check-in</div>
+  <div class="meta"><div><span>会場</span><b>Colorado Convention Center, Meeting Room Level, 14th Street / Blue Bear側階段付近</b></div></div>
+  <div class="memo">RSVPはARVO返信待ち。5分前到着推奨。</div>
+</article>
+<article class="card action" data-date="5/4 月" data-type="イベント" data-status="参加予定" data-action="true" data-time="02-1080" data-search="5/4 月 18:00  イベント  travel grant受賞者写真撮影 travel grant recipient photo session 参加予定 colorado convention center, meeting room level, 14th street / blue bear側階段付近  joanne g. angle memorial group。遅刻不可。grf receptionは重複のため参加しない。">
+  <div class="top"><div class="time">18:00</div><div class="badges"><span class="badge">イベント</span><span class="badge action">参加予定</span></div></div>
+  
+  <div class="title">Travel Grant受賞者写真撮影</div>
+  <div class="en">Travel Grant recipient photo session</div>
+  <div class="meta"><div><span>会場</span><b>Colorado Convention Center, Meeting Room Level, 14th Street / Blue Bear側階段付近</b></div></div>
+  <div class="memo">Joanne G. Angle Memorial group。遅刻不可。GRF Receptionは重複のため参加しない。</div>
+</article>
+<article class="card action" data-date="5/4 月" data-type="イベント" data-status="参加予定" data-action="true" data-time="02-1110" data-search="5/4 月 18:30  イベント  travel grant学生・トレイニー交流会 travel grant student/trainee social 参加予定 colorado convention center, lobby d  軽食・交流。">
+  <div class="top"><div class="time">18:30</div><div class="badges"><span class="badge">イベント</span><span class="badge action">参加予定</span></div></div>
+  
+  <div class="title">Travel Grant学生・トレイニー交流会</div>
+  <div class="en">Travel Grant Student/Trainee Social</div>
+  <div class="meta"><div><span>会場</span><b>Colorado Convention Center, Lobby D</b></div></div>
+  <div class="memo">軽食・交流。</div>
+</article>
+<article class="card action" data-date="5/4 月" data-type="イベント" data-status="一部参加予定" data-action="true" data-time="02-1110" data-search="5/4 月 18:30 20:00 イベント  千寿 retina &amp; glaucoma &amp; dry eye seminar senju retina &amp; glaucoma &amp; dry eye seminar 一部参加予定 le meridien denver downtown 2f the grove2  travel grant social終了次第参加。">
+  <div class="top"><div class="time">18:30–20:00</div><div class="badges"><span class="badge">イベント</span><span class="badge action">一部参加予定</span></div></div>
+  
+  <div class="title">千寿 Retina &amp; Glaucoma &amp; Dry Eye Seminar</div>
+  <div class="en">SENJU Retina &amp; Glaucoma &amp; Dry Eye Seminar</div>
+  <div class="meta"><div><span>会場</span><b>Le Meridien Denver Downtown 2F The Grove2</b></div></div>
+  <div class="memo">Travel Grant social終了次第参加。</div>
+</article></div></section><section class="day" data-date="5/5 火"><h2>5/5 火</h2><div class="cards">
+<article class="card " data-date="5/5 火" data-type="イベント" data-status="任意（立ち寄り可）" data-action="false" data-time="03-0540" data-search="5/5 火 9:00 13:00 イベント  マイティアサロン mytear salon 任意（立ち寄り可） le meridien denver downtown 2f kebler pass2  好きな時に立ち寄り可。必須ではないためハイライト対象外。">
+  <div class="top"><div class="time">9:00–13:00</div><div class="badges"><span class="badge">イベント</span><span class="badge status">任意（立ち寄り可）</span></div></div>
+  
+  <div class="title">マイティアサロン</div>
+  <div class="en">Mytear Salon</div>
+  <div class="meta"><div><span>会場</span><b>Le Meridien Denver Downtown 2F Kebler Pass2</b></div></div>
+  <div class="memo">好きな時に立ち寄り可。必須ではないためハイライト対象外。</div>
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0540" data-search="5/5 火 9:00 9:15 口演 kazuya oikawa glp-1受容体作動薬の長期投与が緑内障における視覚路神経炎症に及ぼす影響 effects of extended glp-1 receptor agonism on visual pathway neuroinflammation in glaucoma 候補 bluebird ballroom 1a session 301 / no. 2483 ">
+  <div class="top"><div class="time">9:00–9:15</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Kazuya Oikawa</div>
+  <div class="title">GLP-1受容体作動薬の長期投与が緑内障における視覚路神経炎症に及ぼす影響</div>
+  <div class="en">Effects of extended GLP-1 receptor agonism on visual pathway neuroinflammation in glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 301 / No. 2483</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0555" data-search="5/5 火 9:15 9:30 口演 harshini raman 緑内障疑いおよび緑内障患者における糖代謝異常と炎症変化 dysregulation of glucose metabolism and inflammatory changes in glaucoma suspects and patients 候補 mile high 4e session 312 / no. 2560 ">
+  <div class="top"><div class="time">9:15–9:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Harshini Raman</div>
+  <div class="title">緑内障疑いおよび緑内障患者における糖代謝異常と炎症変化</div>
+  <div class="en">Dysregulation of Glucose Metabolism and Inflammatory Changes in Glaucoma Suspects and Patients</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 312 / No. 2560</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0555" data-search="5/5 火 9:15 9:30 口演 meredith s gregory-ksander ヒト緑内障におけるnlrp3上昇と、新規nlrp3標的生物製剤による緑内障マウスモデルでの神経保護 nlrp3 upregulation in human glaucoma and neuroprotection by a novel nlrp3-targeting biologic in mouse models of glaucoma 候補 bluebird ballroom 1a session 301 / no. 2484 ">
+  <div class="top"><div class="time">9:15–9:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Meredith S Gregory-Ksander</div>
+  <div class="title">ヒト緑内障におけるNLRP3上昇と、新規NLRP3標的生物製剤による緑内障マウスモデルでの神経保護</div>
+  <div class="en">NLRP3 upregulation in human glaucoma and neuroprotection by a novel NLRP3-targeting biologic in mouse models of glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 301 / No. 2484</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0555" data-search="5/5 火 9:15 9:30 口演 yufei teng ウイルス様粒子を用いたミオシリン関連緑内障に対する一過性・組織特異的crispr治療 transient and tissue-specific crispr treatment of myocilin-associated glaucoma via virus-like particle 候補 405 session 315 / no. 2580 ">
+  <div class="top"><div class="time">9:15–9:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Yufei Teng</div>
+  <div class="title">ウイルス様粒子を用いたミオシリン関連緑内障に対する一過性・組織特異的CRISPR治療</div>
+  <div class="en">Transient and Tissue-specific CRISPR Treatment of Myocilin-associated Glaucoma via virus-like particle</div>
+  <div class="meta"><div><span>会場</span><b>405</b></div><div><span>ID</span><b>Session 315 / No. 2580</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0570" data-search="5/5 火 9:30 9:45 口演 heberto quintero 軽度のミトコンドリア脱共役は実験的緑内障においてrgcレジリエンスを回復し視機能を保護する mild mitochondrial uncoupling restores rgc resilience and preserves vision in experimental glaucoma 候補 bluebird ballroom 1a session 301 / no. 2485 ">
+  <div class="top"><div class="time">9:30–9:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Heberto Quintero</div>
+  <div class="title">軽度のミトコンドリア脱共役は実験的緑内障においてRGCレジリエンスを回復し視機能を保護する</div>
+  <div class="en">Mild Mitochondrial Uncoupling Restores RGC Resilience and Preserves Vision in Experimental Glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 301 / No. 2485</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0585" data-search="5/5 火 9:45 10:00 口演 anh h pham ミトコンドリアdnaコピー数低値は原発開放隅角緑内障のより速い進行と関連する low mitochondrial dna copy number is associated with faster progression in primary open-angle glaucoma 候補 bluebird ballroom 1a session 301 / no. 2486 ">
+  <div class="top"><div class="time">9:45–10:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Anh H Pham</div>
+  <div class="title">ミトコンドリアDNAコピー数低値は原発開放隅角緑内障のより速い進行と関連する</div>
+  <div class="en">Low Mitochondrial DNA Copy Number is Associated with Faster Progression in Primary Open-Angle Glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 301 / No. 2486</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0585" data-search="5/5 火 9:45 10:00 口演 mauricio garcia ltbp2ヘテロ接合性機能喪失変異保因者は成人発症原発開放隅角緑内障リスクが高い heterozygous ltbp2 loss-of-function variant carriers have an increased risk of adult-onset primary open angle glaucoma 候補 mile high 4e session 312 / no. 2562 ">
+  <div class="top"><div class="time">9:45–10:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Mauricio Garcia</div>
+  <div class="title">LTBP2ヘテロ接合性機能喪失変異保因者は成人発症原発開放隅角緑内障リスクが高い</div>
+  <div class="en">Heterozygous LTBP2 loss-of-function variant carriers have an increased risk of adult-onset primary open angle glaucoma</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 312 / No. 2562</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0600" data-search="5/5 火 10:00 10:15 口演 brad fortune 緑内障非ヒト霊長類網膜への移植後における幹細胞由来置換rgcの生存、遊走、成熟 survival, migration, and maturation of stem cell-derived replacement retinal ganglion cells after transplantation into glaucomatous nonhuman primate retina 候補 bluebird ballroom 1a session 301 / no. 2487 ">
+  <div class="top"><div class="time">10:00–10:15</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Brad Fortune</div>
+  <div class="title">緑内障非ヒト霊長類網膜への移植後における幹細胞由来置換RGCの生存、遊走、成熟</div>
+  <div class="en">Survival, migration, and maturation of stem cell-derived replacement retinal ganglion cells after transplantation into glaucomatous nonhuman primate retina</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 301 / No. 2487</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0795" data-search="5/5 火 13:15 13:30 口演 jingwen cai 異なる緑内障サブタイプにおける房水の比較プロテオーム解析 comparative proteomic analysis of aqueous humor in distinct glaucoma subtypes 候補 405 session 340 / no. 2933 ">
+  <div class="top"><div class="time">13:15–13:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Jingwen Cai</div>
+  <div class="title">異なる緑内障サブタイプにおける房水の比較プロテオーム解析</div>
+  <div class="en">Comparative Proteomic Analysis of Aqueous Humor in Distinct Glaucoma Subtypes</div>
+  <div class="meta"><div><span>会場</span><b>405</b></div><div><span>ID</span><b>Session 340 / No. 2933</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0795" data-search="5/5 火 13:15 14:00 口演 joshua stein and lev prasov ビッグデータと家系研究を用いた新規緑内障遺伝子の定義 using big data and familial studies to define novel glaucoma genes 候補 mile high 4e session 337 ">
+  <div class="top"><div class="time">13:15–14:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Joshua Stein and Lev Prasov</div>
+  <div class="title">ビッグデータと家系研究を用いた新規緑内障遺伝子の定義</div>
+  <div class="en">Using Big Data and Familial Studies to Define Novel Glaucoma Genes</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 337</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0833" data-search="5/5 火 13:53 14:11 口演 kevin l schey maldiイメージングから見た眼老化の空間プロテオームマッピング spatial proteomic mapping of ocular aging: insights from maldi imaging 候補 401 session 338 / no. 2923 ">
+  <div class="top"><div class="time">13:53–14:11</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Kevin L Schey</div>
+  <div class="title">MALDIイメージングから見た眼老化の空間プロテオームマッピング</div>
+  <div class="en">Spatial Proteomic Mapping of Ocular Aging: Insights from MALDI Imaging</div>
+  <div class="meta"><div><span>会場</span><b>401</b></div><div><span>ID</span><b>Session 338 / No. 2923</b></div></div>
+  
+</article>
+<article class="card action" data-date="5/5 火" data-type="口演" data-status="発表" data-action="true" data-time="03-0930" data-search="5/5 火 15:30 15:45 口演 naoki kiyota scへのマクロファージリクルートメントとvegfa–kdrシグナルは加齢に伴う房水流出路狭窄を代償する可能性がある macrophage recruitment to schlemm’s canal and vegfa–kdr signaling may compensate for age-related outflow pathway narrowing 発表 mile high 4e session 362 / no. 3400 ">
+  <div class="top"><div class="time">15:30–15:45</div><div class="badges"><span class="badge">口演</span><span class="badge action">発表</span></div></div>
+  <div class="person">Naoki Kiyota</div>
+  <div class="title">SCへのマクロファージリクルートメントとVEGFA–KDRシグナルは加齢に伴う房水流出路狭窄を代償する可能性がある</div>
+  <div class="en">Macrophage Recruitment to Schlemm’s Canal and VEGFA–KDR Signaling May Compensate for Age-Related Outflow Pathway Narrowing</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3400</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補・重複" data-action="false" data-time="03-0930" data-search="5/5 火 15:30 15:45 口演 todd e scheetz 老化および黄斑変性におけるヒト脈絡膜の発現量的形質遺伝子座 expression quantitative trait loci of the human choroid in aging and macular degeneration 候補・重複 401 session 363 / no. 3407 ">
+  <div class="top"><div class="time">15:30–15:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補・重複</span></div></div>
+  <div class="person">Todd E Scheetz</div>
+  <div class="title">老化および黄斑変性におけるヒト脈絡膜の発現量的形質遺伝子座</div>
+  <div class="en">Expression quantitative trait loci of the human choroid in aging and macular degeneration</div>
+  <div class="meta"><div><span>会場</span><b>401</b></div><div><span>ID</span><b>Session 363 / No. 3407</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0945" data-search="5/5 火 15:45 16:00 口演 anusha shivashankar tensin3生体分子凝縮体の標的化はtmのメカノシグナル伝達ハブを破綻させる targeting tensin3 biomolecular condensates disrupts mechanosignaling hubs in the trabecular meshwork 候補 mile high 4e session 362 / no. 3401 ">
+  <div class="top"><div class="time">15:45–16:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Anusha Shivashankar</div>
+  <div class="title">Tensin3生体分子凝縮体の標的化はTMのメカノシグナル伝達ハブを破綻させる</div>
+  <div class="en">Targeting Tensin3 biomolecular condensates disrupts mechanosignaling hubs in the trabecular meshwork</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3401</b></div></div>
+  
+</article>
+<article class="card action" data-date="5/5 火" data-type="イベント" data-status="予定" data-action="true" data-time="03-0950" data-search="5/5 火 15:50  イベント asahi fujita 藤田あさひ先生との面談 meeting with dr. asahi fujita 予定 mile high 4e付近  発表後、15:50を目安に会場付近で藤田先生から声かけ予定。">
+  <div class="top"><div class="time">15:50</div><div class="badges"><span class="badge">イベント</span><span class="badge action">予定</span></div></div>
+  <div class="person">Asahi Fujita</div>
+  <div class="title">藤田あさひ先生との面談</div>
+  <div class="en">Meeting with Dr. Asahi Fujita</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E付近</b></div></div>
+  <div class="memo">発表後、15:50を目安に会場付近で藤田先生から声かけ予定。</div>
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0960" data-search="5/5 火 16:00 16:15 口演 mohil mishra 線維柱帯細胞および幹細胞由来エクソソームが緑内障モデルのミトコンドリア動態に及ぼす影響 impact of exosomes from trabecular meshwork cells and stem cells on mitochondrial dynamics in glaucoma models 候補 mile high 4e session 362 / no. 3402 ">
+  <div class="top"><div class="time">16:00–16:15</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Mohil Mishra</div>
+  <div class="title">線維柱帯細胞および幹細胞由来エクソソームが緑内障モデルのミトコンドリア動態に及ぼす影響</div>
+  <div class="en">Impact of Exosomes from Trabecular Meshwork Cells and Stem Cells on Mitochondrial Dynamics in Glaucoma Models</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3402</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0975" data-search="5/5 火 16:15 16:30 口演 cydney a. wong マウスおよびヒトtmの高流出領域と低流出領域のトランスクリプトームプロファイリング transcriptomic profiling of high vs. low flow regions of mouse and human trabecular meshwork 候補 mile high 4e session 362 / no. 3403 ">
+  <div class="top"><div class="time">16:15–16:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Cydney A. Wong</div>
+  <div class="title">マウスおよびヒトTMの高流出領域と低流出領域のトランスクリプトームプロファイリング</div>
+  <div class="en">Transcriptomic Profiling of High vs. Low Flow Regions of Mouse and Human Trabecular Meshwork</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3403</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補・重複" data-action="false" data-time="03-0990" data-search="5/5 火 16:30 16:45 口演 sneha nair デジタル空間トランスクリプトミクスとmirnaプロファイリングによりtm幹細胞の分子制御と緑内障状態での変化を同定 integrated digital spatial transcriptomics and mirna profiling identified molecular regulation of trabecular meshwork stem cells and their alteration in glaucomatous condition 候補・重複 mile high 4e session 362 / no. 3404 ">
+  <div class="top"><div class="time">16:30–16:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補・重複</span></div></div>
+  <div class="person">Sneha Nair</div>
+  <div class="title">デジタル空間トランスクリプトミクスとmiRNAプロファイリングによりTM幹細胞の分子制御と緑内障状態での変化を同定</div>
+  <div class="en">Integrated digital spatial transcriptomics and miRNA profiling identified molecular regulation of trabecular meshwork stem cells and their alteration in glaucomatous condition</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3404</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-0990" data-search="5/5 火 16:30 16:45 口演 anupam kumar mondal 統合マルチオミクスにより老化網膜の食餌への分子適応と生物学的性の重要な役割が明らかになる integrated multi-omics reveals molecular adaptation to diet in the aging retina and a key role of biological sex 候補 401 session 363 / no. 3411 ">
+  <div class="top"><div class="time">16:30–16:45</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Anupam Kumar Mondal</div>
+  <div class="title">統合マルチオミクスにより老化網膜の食餌への分子適応と生物学的性の重要な役割が明らかになる</div>
+  <div class="en">Integrated multi-omics reveals molecular adaptation to diet in the aging retina and a key role of biological sex</div>
+  <div class="meta"><div><span>会場</span><b>401</b></div><div><span>ID</span><b>Session 363 / No. 3411</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-1005" data-search="5/5 火 16:45 17:00 口演 yangfan yang integrin αvβ3–rock/clan経路の標的化はマウスモデルでtm線維化を抑制し高眼圧を軽減する targeting the integrin αvβ3-rock/clan pathway attenuates trabecular meshwork fibrosis and reduces ocular hypertension in a mouse model 候補 mile high 4e session 362 / no. 3405 ">
+  <div class="top"><div class="time">16:45–17:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Yangfan Yang</div>
+  <div class="title">Integrin αvβ3–ROCK/CLAN経路の標的化はマウスモデルでTM線維化を抑制し高眼圧を軽減する</div>
+  <div class="en">Targeting the Integrin αvβ3-ROCK/CLAN Pathway Attenuates Trabecular Meshwork Fibrosis and Reduces Ocular Hypertension in a Mouse Model</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3405</b></div></div>
+  
+</article>
+<article class="card " data-date="5/5 火" data-type="口演" data-status="候補" data-action="false" data-time="03-1020" data-search="5/5 火 17:00 17:15 口演 benjamin thomson 成体マウスscにおけるprox1欠失はリンパ管様フェノタイプの喪失と高眼圧を引き起こす prox1 deletion from adult mouse schlemm’s canal causes loss of lymphatic-like phenotype and ocular hypertension 候補 mile high 4e session 362 / no. 3406 ">
+  <div class="top"><div class="time">17:00–17:15</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Benjamin Thomson</div>
+  <div class="title">成体マウスSCにおけるPROX1欠失はリンパ管様フェノタイプの喪失と高眼圧を引き起こす</div>
+  <div class="en">PROX1 deletion from adult mouse Schlemm’s canal causes loss of lymphatic-like phenotype and ocular hypertension</div>
+  <div class="meta"><div><span>会場</span><b>Mile High 4E</b></div><div><span>ID</span><b>Session 362 / No. 3406</b></div></div>
+  
+</article></div></section><section class="day" data-date="5/6 水"><h2>5/6 水</h2><div class="cards">
+<article class="card " data-date="5/6 水" data-type="口演" data-status="候補" data-action="false" data-time="04-0615" data-search="5/6 水 10:15 10:30 口演 tianyuan “ben” yao plx食は緑内障におけるglp1raを介したrgc保護を阻害し、運命追跡により再増殖網膜ミエロイド細胞の起源を明らかにする plx diet inhibits glp1ra-mediated rgc protection in glaucoma and reveals the origin of repopulating retinal myeloid cells through fate mapping 候補 bluebird ballroom 1a session 401 / no. 3779 ">
+  <div class="top"><div class="time">10:15–10:30</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Tianyuan “Ben” Yao</div>
+  <div class="title">PLX食は緑内障におけるGLP1RAを介したRGC保護を阻害し、運命追跡により再増殖網膜ミエロイド細胞の起源を明らかにする</div>
+  <div class="en">PLX Diet Inhibits GLP1RA-Mediated RGC Protection in Glaucoma and Reveals the Origin of Repopulating Retinal Myeloid Cells Through Fate Mapping</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 401 / No. 3779</b></div></div>
+  
+</article>
+<article class="card " data-date="5/6 水" data-type="ポスター" data-status="候補" data-action="false" data-time="04-0615" data-search="5/6 水 10:15 12:00 ポスター akiko hanyuda 大規模人口コホートにおける落屑症候群／緑内障のloxl1関連遺伝的リスクのプロテオーム構造 proteomic architecture of loxl1-associated genetic risk for exfoliation syndrome/glaucoma in a large population-cohort 候補 exhibit hall / poster hall session 420 / poster 0303 ">
+  <div class="top"><div class="time">10:15–12:00</div><div class="badges"><span class="badge">ポスター</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Akiko Hanyuda</div>
+  <div class="title">大規模人口コホートにおける落屑症候群／緑内障のLOXL1関連遺伝的リスクのプロテオーム構造</div>
+  <div class="en">Proteomic Architecture of LOXL1-Associated Genetic Risk for Exfoliation Syndrome/Glaucoma in a Large Population-Cohort</div>
+  <div class="meta"><div><span>会場</span><b>Exhibit Hall / Poster Hall</b></div><div><span>ID</span><b>Session 420 / Poster 0303</b></div></div>
+  
+</article>
+<article class="card " data-date="5/6 水" data-type="ポスター" data-status="候補" data-action="false" data-time="04-0840" data-search="5/6 水 14:00 15:45 ポスター marina yamaguchi 小児屈折スクリーニング用の新規小型・電源不要手動屈折計の評価 evaluation of a novel, compact, electricity-free manual refractometer for pediatric refractive screening 候補 exhibit hall / poster hall session 450 / poster 0460 ">
+  <div class="top"><div class="time">14:00–15:45</div><div class="badges"><span class="badge">ポスター</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Marina Yamaguchi</div>
+  <div class="title">小児屈折スクリーニング用の新規小型・電源不要手動屈折計の評価</div>
+  <div class="en">Evaluation of a Novel, Compact, Electricity-free Manual Refractometer for Pediatric Refractive Screening</div>
+  <div class="meta"><div><span>会場</span><b>Exhibit Hall / Poster Hall</b></div><div><span>ID</span><b>Session 450 / Poster 0460</b></div></div>
+  
+</article></div></section><section class="day" data-date="5/7 木"><h2>5/7 木</h2><div class="cards">
+<article class="card " data-date="5/7 木" data-type="ポスター" data-status="候補" data-action="false" data-time="05-0480" data-search="5/7 木 8:00 9:45 ポスター masaaki yoshida hsv-1角膜感染における三叉神経節・交感神経節のシングルセルtranscriptome解析と感覚ニューロン由来ccl2の抗ウイルス作用 single-cell transcriptomic profiling of trigeminal and sympathetic ganglia and the antiviral role of sensory neuron–derived ccl2 during hsv-1 corneal infection 候補 exhibit hall / poster hall session 515 / poster 0731 ">
+  <div class="top"><div class="time">8:00–9:45</div><div class="badges"><span class="badge">ポスター</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Masaaki Yoshida</div>
+  <div class="title">HSV-1角膜感染における三叉神経節・交感神経節のシングルセルtranscriptome解析と感覚ニューロン由来CCL2の抗ウイルス作用</div>
+  <div class="en">Single-cell transcriptomic profiling of trigeminal and sympathetic ganglia and the antiviral role of sensory neuron–derived CCL2 during HSV-1 corneal infection</div>
+  <div class="meta"><div><span>会場</span><b>Exhibit Hall / Poster Hall</b></div><div><span>ID</span><b>Session 515 / Poster 0731</b></div></div>
+  
+</article>
+<article class="card " data-date="5/7 木" data-type="ポスター" data-status="候補" data-action="false" data-time="05-0480" data-search="5/7 木 8:00 9:45 ポスター tadashi nakashima vrゲームのスコアと緑内障性視野欠損の関連の検討 examining the relationship between scores in a vr game and glaucomatous visual field defects 候補 exhibit hall / poster hall session 503 / poster 0004 ">
+  <div class="top"><div class="time">8:00–9:45</div><div class="badges"><span class="badge">ポスター</span><span class="badge candidate">候補</span></div></div>
+  <div class="person">Tadashi Nakashima</div>
+  <div class="title">VRゲームのスコアと緑内障性視野欠損の関連の検討</div>
+  <div class="en">Examining the relationship between scores in a VR game and glaucomatous visual field defects</div>
+  <div class="meta"><div><span>会場</span><b>Exhibit Hall / Poster Hall</b></div><div><span>ID</span><b>Session 503 / Poster 0004</b></div></div>
+  
+</article>
+<article class="card " data-date="5/7 木" data-type="口演" data-status="候補" data-action="false" data-time="05-0480" data-search="5/7 木 8:00 10:00 口演  網膜血流に対する老化の影響 symposium: impact of aging on retinal blood flow 候補 bluebird ballroom 1a session 501 ">
+  <div class="top"><div class="time">8:00–10:00</div><div class="badges"><span class="badge">口演</span><span class="badge candidate">候補</span></div></div>
+  
+  <div class="title">網膜血流に対する老化の影響</div>
+  <div class="en">Symposium: Impact of aging on retinal blood flow</div>
+  <div class="meta"><div><span>会場</span><b>Bluebird Ballroom 1A</b></div><div><span>ID</span><b>Session 501</b></div></div>
+  
+</article>
+<article class="card " data-date="5/7 木" data-type="ポスター" data-status="候補・一部のみ" data-action="false" data-time="05-0705" data-search="5/7 木 11:45 12:05頃 ポスター kanae fukutsu 貧血が網膜血管面積に及ぼす影響と性差のai解析 ai-based analysis of the effect of anemia on retinal vascular area and sex-specific differences 候補・一部のみ exhibit hall / poster hall session 535 / poster 0288 ">
+  <div class="top"><div class="time">11:45–12:05頃</div><div class="badges"><span class="badge">ポスター</span><span class="badge candidate">候補・一部のみ</span></div></div>
+  <div class="person">Kanae Fukutsu</div>
+  <div class="title">貧血が網膜血管面積に及ぼす影響と性差のAI解析</div>
+  <div class="en">AI-based analysis of the effect of anemia on retinal vascular area and sex-specific differences</div>
+  <div class="meta"><div><span>会場</span><b>Exhibit Hall / Poster Hall</b></div><div><span>ID</span><b>Session 535 / Poster 0288</b></div></div>
+  
+</article>
+<article class="card action" data-date="5/7 木" data-type="ホテル" data-status="確定" data-action="true" data-time="05-0720" data-search="5/7 木 12:00まで  ホテル  hotel teatroチェックアウト hotel teatro check-out 確定 hotel teatro, 1100 14th st, denver, co 80202  チェックアウト締切は12:00（正午）。">
+  <div class="top"><div class="time">12:00まで</div><div class="badges"><span class="badge">ホテル</span><span class="badge action">確定</span></div></div>
+  
+  <div class="title">Hotel Teatroチェックアウト</div>
+  <div class="en">Hotel Teatro check-out</div>
+  <div class="meta"><div><span>会場</span><b>Hotel Teatro, 1100 14th St, Denver, CO 80202</b></div></div>
+  <div class="memo">チェックアウト締切は12:00（正午）。</div>
+</article>
+<article class="card action" data-date="5/7 木" data-type="移動" data-status="推奨" data-action="true" data-time="05-0735" data-search="5/7 木 12:15頃  移動  会場またはhotel teatroからdenへ出発 leave venue / hotel teatro for den 推奨 colorado convention center / hotel teatro → den  荷物をhotel teatroで受け取って空港へ移動。">
+  <div class="top"><div class="time">12:15頃</div><div class="badges"><span class="badge">移動</span><span class="badge action">推奨</span></div></div>
+  
+  <div class="title">会場またはHotel TeatroからDENへ出発</div>
+  <div class="en">Leave venue / Hotel Teatro for DEN</div>
+  <div class="meta"><div><span>会場</span><b>Colorado Convention Center / Hotel Teatro → DEN</b></div></div>
+  <div class="memo">荷物をHotel Teatroで受け取って空港へ移動。</div>
+</article>
+<article class="card action" data-date="5/7 木" data-type="移動" data-status="確定" data-action="true" data-time="05-0925" data-search="5/7 木 15:25 19:04 移動  デンバーdenからシカゴordへ移動 denver den → chicago ord 確定 ua1023  seat 34d。">
+  <div class="top"><div class="time">15:25–19:04</div><div class="badges"><span class="badge">移動</span><span class="badge action">確定</span></div></div>
+  
+  <div class="title">デンバーDENからシカゴORDへ移動</div>
+  <div class="en">Denver DEN → Chicago ORD</div>
+  <div class="meta"><div><span>会場</span><b>UA1023</b></div></div>
+  <div class="memo">Seat 34D。</div>
+</article></div></section></main>
+<div id="empty" class="empty">該当する予定がありません。</div>
+<script>
+let activeDate='all';
+function filter(){const q=document.getElementById('q').value.toLowerCase().trim();const type=document.getElementById('type').value;const status=document.getElementById('status').value;const actionOnly=document.getElementById('actionOnly').checked;let shown=0;document.querySelectorAll('.card').forEach(c=>{let ok=true;if(activeDate!=='all'&&c.dataset.date!==activeDate)ok=false;if(type&&c.dataset.type!==type)ok=false;if(status&&c.dataset.status!==status)ok=false;if(actionOnly&&c.dataset.action!=='true')ok=false;if(q&&!c.dataset.search.includes(q))ok=false;c.classList.toggle('hidden',!ok);if(ok)shown++;});document.querySelectorAll('.day').forEach(sec=>{const visible=[...sec.querySelectorAll('.card')].some(c=>!c.classList.contains('hidden'));sec.classList.toggle('hidden',!visible);});document.getElementById('count').textContent=shown+'件表示';document.getElementById('empty').style.display=shown?'none':'block';}
+function sortCards(){const mode=document.getElementById('sort').value;document.querySelectorAll('.cards').forEach(wrap=>{[...wrap.children].sort((a,b)=>{if(mode==='action'){const aa=a.dataset.action==='true'?1:0,bb=b.dataset.action==='true'?1:0;if(bb-aa)return bb-aa;}if(mode==='type'){const c=a.dataset.type.localeCompare(b.dataset.type,'ja');if(c)return c;}return a.dataset.time.localeCompare(b.dataset.time);}).forEach(c=>wrap.appendChild(c));});filter();}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{activeDate=b.dataset.date;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter();window.scrollTo({top:0,behavior:'smooth'});});
+['q','type','status','actionOnly'].forEach(id=>document.getElementById(id).addEventListener('input',filter));document.getElementById('sort').addEventListener('change',sortCards);filter();
+</script>
+</body>
+</html>
